@@ -31,8 +31,7 @@ public class GapStepDefiniton2 extends GapElements {
         ChromeOptions o = new ChromeOptions();
         o.addArguments("disable-extensions");
         o.addArguments("--start-maximized");
-        WebDriver driver = new ChromeDriver(o);
-        driver=new ChromeDriver();
+        driver=new ChromeDriver(o);
         //driver=new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
        // WebDriverWait wait=new WebDriverWait(driver,5);
