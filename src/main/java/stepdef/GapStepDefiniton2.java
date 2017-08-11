@@ -28,10 +28,10 @@ public class GapStepDefiniton2 extends GapElements {
     @Given("^user navigate to main page$")
     public void user_navigate_to_main_page() throws Throwable {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\breddy\\workspace\\MavenCucumberJenkinsGithub\\drivers\\chromedriver.exe");
-        ChromeOptions o = new ChromeOptions();
+        /*ChromeOptions o = new ChromeOptions();
         o.addArguments("disable-extensions");
-        o.addArguments("--start-maximized");
-        driver=new ChromeDriver(o);
+        o.addArguments("--start-maximized");*/
+        driver=new ChromeDriver();
         //driver=new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
        // WebDriverWait wait=new WebDriverWait(driver,5);
