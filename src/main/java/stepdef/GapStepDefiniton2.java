@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,7 +27,11 @@ public class GapStepDefiniton2 extends GapElements {
 
     @Given("^user navigate to main page$")
     public void user_navigate_to_main_page() throws Throwable {
-        System.setProperty("webdriver.chrome.driver","E:\\my softwares\\chintu\\CucumberMaven\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\breddy\\workspace\\MavenCucumberJenkinsGithub\\chromedriver.exe");
+        ChromeOptions o = new ChromeOptions();
+        o.addArguments("disable-extensions");
+        o.addArguments("--start-maximized");
+        WebDriver driver = new ChromeDriver(o);
         driver=new ChromeDriver();
         //driver=new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
