@@ -27,7 +27,7 @@ public class GapStepDefiniton2 extends GapElements {
 
     @Given("^user navigate to main page$")
     public void user_navigate_to_main_page() throws Throwable {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\breddy\\workspace\\MavenCucumberJenkinsGithub\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\breddy\\workspace\\MavenCucumberJenkinsGithub\\drivers\\chromedriver.exe");
         ChromeOptions o = new ChromeOptions();
         o.addArguments("disable-extensions");
         o.addArguments("--start-maximized");
